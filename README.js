@@ -528,9 +528,6 @@ http:\/\/data\.ufbae\.com\/User\/GetUser url script-response-body https://raw.gi
 #神弓守护者+无限钻石金币
 ^https:\/\/xiaobai\.mcfifa\.cn\/data_sjdata? url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/yx/sgsfz.js
 
-#91视频(TF版)+解锁VIP
-^https://(app|api).*.com/m_user/info url script-request-header https://raw.githubusercontent.com/89996462/Quantumult-X/main/ghs/91tv.js
-
 #闪萌表情-解锁VIP
 ^https:\/\/hi\.weshine\.im\/v3\.0\/account\/profile url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/smbq.js
 
