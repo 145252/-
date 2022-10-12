@@ -1,7 +1,5 @@
-# -#微信公众号：11
-#更新时间 2022/07/0
 
-hostname = www.babybooks.top,vip.0818km.cn,vni.kwaiying.com,passport.beva.com,gateway.ergedd.com,api.ggmza.cn,api.rr.tv, audiobookpay.kuwo.cn, tingshu.kuwo.cn, buy.itunes.apple.com, biz.caiyunapp.com, commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi, pay.wecut.com, zebra.maka.im, vstou.faxingwu.com, account.wps.cn, api.revenuecat.com, iosv2.cjapi.wufan88.com, matrix.fingerplay.cn, api.8897815.com, pan.baidu.com, dashen-api.shuiyinyu.com, api.vuevideo.net, gw.aoscdn.com, api-sub.meitu.com, api2.mubu.com, qianqianapi.chanwind.com, *.*.elb.amazonaws.com, www.51haoxue.cn, buy.itunes.apple.com, ap*.intsig.net, gzfanyin.com, api-v3.speedtest.cn, api.xunyou.mobi
+#更新时间 2022/10/12
 
 #汉堡儿童睡前故事（解锁永久VIP）
 ^https:\/\/www\.babybooks\.top\/v0\/profile url script-response-body https://gjds.vip/QX/pojie/sqgs.js
@@ -171,22 +169,6 @@ http:\/\/wallpaper\.soutushenqi\.com\/api\/v1\/account url script-response-body 
 
 
 
-#  cokemv.me, *.pornhub.com, www.lezhutv.com, www.bimi*.net, 18comic.org, www.o8tv.com, 555dy.vip,www.5*.com,www.5*.cc, gimytv.app, www.tkys.tv, www.qianoo.cn, *.zhenbuka*.*, www.libvio.me
-
-
-# > 12 Cokemv[网页优化]@ddgksf2013 - 网站地址：https://cokemv.me/
-^https?:/\/cokemv\.me(\/?$|\/([?]|vod).*$) url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Html/JS/cokemv.js
-
-# > 11 PornHub[网页优化]@ddgksf2013 - 网站地址：https://cn.pornhub.com
-^https:\/\/(cn|www)\.pornhub\.com\/_xa\/ads url reject-dict
-^https?:/\/(cn|www)\.pornhub\.com(\/?$|\/([?]|view|video).*$) url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Html/JS/pornhub.js
-
-# > 10 LeZhu[网页优化]@ddgksf2013 - 网站地址：http://www.lezhutv.com
-^https?:/\/www\.lezhutv\.com(\/?$|\/([?]|type|detail|play|index).*$) url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Html/JS/lezhu.js
-
-# > 09 Bimi[网页优化]@ddgksf2013 - 网站地址：https://www.bimi.net
-^https?:/\/www\.bimi.*\.(net\/$|net\/(vodshow|bangumi|type)\/[0-9a-z-\/]+\/$) url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Html/JS/bimi.js
-
 # > 08 禁漫天堂[网页优化]@ddgksf2013 - 网站地址：https://18comic.org
 ^https?:\/\/18comic\.org(\/?$|\/([?]|album|photo).*$) url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Html/JS/18comic.js
 
@@ -206,8 +188,6 @@ http:\/\/wallpaper\.soutushenqi\.com\/api\/v1\/account url script-response-body 
 # > 02 真不卡[网页优化]@ddgksf2013 - 网站地址：https://www.zhenbuka5.com
 ^https?:\/\/www\.zhenbuka.*\.com(\/?$|\/([?]|vod).*$) url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Html/JS/zhenbuka.js
 
-# > 01 libvio[网页优化]@ddgksf2013 - 网站地址：https://www.iioo.me
-^https?:/\/www\.libvio\.(me\/$|me\/(detail|play)\/[0-9a-z-]+\.html$) url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Html/JS/libvio.js
 
 #  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -218,7 +198,7 @@ http:\/\/wallpaper\.soutushenqi\.com\/api\/v1\/account url script-response-body 
 
 # 七猫小说(2022.01.18).    *.wtzw.com
 # 柱：解锁终身会员，无任何下载、阅读、听书限制，去除所有广告（还有广告卸载重装）
-^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/ url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/QiMaoXiaoShuo.js
+^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/ url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/QiMaoXiaoShuo.conf
 
 # 菜谱大全(2022.01.19).    apiios_dq.xiangha.com, appweb_dq.xiangha.com, 101.200.225.157
 ^https?:\/\/apiios_dq\.xiangha\.com\/v\d\/ url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/CaiPuDaQuan.js
@@ -255,7 +235,7 @@ http:\/\/wallpaper\.soutushenqi\.com\/api\/v1\/account url script-response-body 
 
 # 微信读书   i.weread.qq.com, 101*.*.*, 116.*.*.*, 140.*.*.*, 183.*.*.*, 203*.*.*
 # 使用方法：不支持最新版本，仅支持5.5.1版本； 会员页面无法打开，请关闭去广告规则
-# ^https?:\/\/i\.weread\.qq\.com\/pay\/memberCardSummary url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/WeRead.js
+# ^https?:\/\/i\.weread\.qq\.com\/pay\/memberCardSummary url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/WeRead.conf
 
 # 流利说·阅读   vira.llsapp.com
 # 使用方法：会员时长到2030年，破解的标志是打开阅读️限制，不会提示会员才能看️️️，如果没有显示会员，剩余天数999。必须卸载重装！
@@ -379,188 +359,6 @@ URL-REGEX,^https?:\/\/api\.zhihu\.com\/commercial_api\/launch_v2\? url reject-di
 # Netflix评分
 ^https?://ios-h2\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D url script-request-header https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
 ^https?://ios-h2\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
-
-# ================ Safari全能搜索 开始 ================
-# Safari 内输入 命令 + 空格 + 关键词 快速指定搜索引擎搜索
-#  注：先进入设置更改 Safari 默认搜索引擎为 DuckDuckGO
-# 可自行修改指令或者添加搜索引擎
-# mitm：duckduckgo.com
-
-# gm (谷歌图片)
-^https:\/\/duckduckgo.com\/\?q=gm\+([^&]+).+ url 302 https://www.google.com/search?&tbm=isch&q=$1
-
-# gh (github)
-^https:\/\/duckduckgo.com\/\?q=gh\+([^&]+).+ url 302 https://github.com/search?q=$1
-
-# sof (Stack Overflow)
-^https:\/\/duckduckgo.com\/\?q=sof\+([^&]+).+ url 302 https://stackoverflow.com/search?q=$1
-
-# se(StackExchange)
-^https:\/\/duckduckgo.com\/\?q=se\+([^&]+).+ url 302 https://stackexchange.com/search?q=$1
-
-# wa(WolfamAlpha)
-^https:\/\/duckduckgo.com\/\?q=wa\+([^&]+).+ url 302 https://www.wolframalpha.com/input/?i=$1
-
-# wiki (维基百科)
-^https:\/\/duckduckgo.com\/\?q=wiki(\+|%20)([^&]+).+ url 302 http://wikipedia.org/wiki/$2
-
-# wk(维基百科中文)
-^https:\/\/duckduckgo.com\/\?q=wk(\+|%20)([^&]+).+ url 302 https://zh.wikipedia.org/wiki/$2
-
-# bd (百度搜索)
-^https:\/\/duckduckgo.com\/\?q=bd\+([^&]+).+ url 302 https://www.baidu.com/s?wd=$1
-^https:\/\/duckduckgo.com\/\?q=([^+]+)\+bd.+ url 302 https://www.baidu.com/s?wd=$1
-
-# yh (油猴搜索)
-^https:\/\/duckduckgo.com\/\?q=yh\+([^&]+).+ url 302 https://greasyfork.org/zh-CN/scripts?q=$1
-^https:\/\/duckduckgo.com\/\?q=([^+]+)\+yh.+ url 302 https://greasyfork.org/zh-CN/scripts?q=$1 
-
-# bi (必应搜索)
-^https:\/\/duckduckgo.com\/\?q=bi\+([^&]+).+ url 302 https://cn.bing.com/search?q=$1
-^https:\/\/duckduckgo.com\/\?q=([^+]+)\+bi.+ url 302 https://cn.bing.com/search?q=$1
-# ios (苹果应用搜索)
-^https:\/\/duckduckgo.com\/\?q=ios\+([^&]+).+ url 302 https://www.qimai.cn/search/index/search/$1
-^https:\/\/duckduckgo.com\/\?q=([^+]+)\+ios.+ url 302 https://www.qimai.cn/search/index/search/$1
-
-# mg (Magi)
-^https:\/\/duckduckgo.com\/\?q=mg(\+|%20)([^&]+).+ url 302 https://magi.com/search?q=$2
-
-# tf(google搜索Testflight)
-^https:\/\/duckduckgo.com\/\?q=tf(\+|%20)([^&]+).+ url 302 https://www.google.com/search?as_q=$2&as_sitesearch=testflight.apple.com
-
-# > 翻译
-# yd(有道翻译)
-^https:\/\/duckduckgo.com\/\?q=yd\+([^&]+).+ url 302 http://dict.youdao.com/search?q=$1
-
-# trc(Google翻译到中文)
-^https:\/\/duckduckgo.com\/\?q=trc\+([^&]+).+ url 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=zh-CN&text=$1
-
-# tre(Google翻译到English)
-^https:\/\/duckduckgo.com\/\?q=tre\+([^&]+).+ url 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=$1
-
-# trj(Google翻译到日语)
-^https:\/\/duckduckgo.com\/\?q=trj\+([^&]+).+ url 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=ja&text=$1
-
-
-
-# 社区
-# db(豆瓣)
-^https:\/\/duckduckgo.com\/\?q=db\+([^&]+).+ url 302 https://m.douban.com/search/?query=$1
-
-# zh(知乎)
-^https:\/\/duckduckgo.com\/\?q=zh\+([^&]+).+ url 302 https://www.zhihu.com/search?type=content&q=$1
-
-# wb(微博)
-^https:\/\/duckduckgo.com\/\?q=wb\+([^&]+).+ url 302 https://s.weibo.com/weibo/$1
-
-# wx(微信)
-^https:\/\/duckduckgo.com\/\?q=wx\+([^&]+).+ url 302 https://weixin.sogou.com/weixinwap?query=$1
-
-# rd(Reddit)
-^https:\/\/duckduckgo.com\/\?q=rd\+([^&]+).+ url 302 https://www.reddit.com/search?q=$1
-
-# tw(Twitter)
-^https:\/\/duckduckgo.com\/\?q=tw\+([^&]+).+ url 302 https://twitter.com/search?q=$1
-
-# ssp(少数派)
-^https:\/\/duckduckgo.com\/\?q=ssp\+([^&]+).+ url 302 https://sspai.com/search/post/$1
-
-# tt(头条)
-^https:\/\/duckduckgo.com\/\?q=tt\+([^&]+).+ url 302 https://so.toutiao.com/search?keyword=$1
-^https:\/\/duckduckgo.com\/\?q=([^+]+)\+tt.+ url 302 https://so.toutiao.com/search?keyword=$1
-
-# up xxx (Unsplash)
-^https:\/\/duckduckgo.com\/\?q=up\+([^&]+).+ url 302 https://unsplash.com/s/photos/$1
-^https:\/\/duckduckgo.com\/\?q=([^+]+)\+up.+ url 302 https://unsplash.com/s/photos/$1
-
-# csdn(CSDN)
-^https:\/\/duckduckgo.com\/\?q=csdn\+([^&]+).+ url 302 https://so.csdn.net/so/search/s.do?q=$1&t=&u= 
-
-# > 购物
-# zdm(什么值得买)
-^https:\/\/duckduckgo.com\/\?q=zdm\+([^&]+).+ url 302 https://search.m.smzdm.com/?v=b&s=$1
-
-# amz(亚马逊)
-^https:\/\/duckduckgo.com\/\?q=amz\+([^&]+).+ url 302 https://www.amazon.cn/gp/aw/s/?k=$1
-
-# jd(京东)
-^https:\/\/duckduckgo.com\/\?q=jd\+([^&]+).+ url 302 https://so.m.jd.com/ware/search.action?keyword=$1
-
-# tb(淘宝)
-^https:\/\/duckduckgo.com\/\?q=tb\+([^&]+).+ url 302 https://s.m.taobao.com/h5?q=$1
-
-# tm(天猫)
-^https:\/\/duckduckgo.com\/\?q=tm\+([^&]+).+ url 302 https://s.m.tmall.com/m/search.htm?q=$1
-
-# > 视频资源
-# ac(Acfun)
-^https:\/\/duckduckgo.com\/\?q=ac\+([^&]+).+ url 302 https://www.acfun.cn/search?keyword==$1
-
-# bli(哔哩哔哩)
-^https:\/\/duckduckgo.com\/\?q=bli\+([^&]+).+ url 302 https://m.bilibili.com/search?keyword=$1
-
-# ytb(YouTube)
-^https:\/\/duckduckgo.com\/\?q=ytb\+([^&]+).+ url 302 https://www.youtube.com/results?search_query=$1
-
-# ph(PornHub)
-^https:\/\/duckduckgo.com\/\?q=ph\+([^&]+).+ url 302 https://cn.pornhub.com/video/search?search=$1
-
-
-# > 苹果商店切换
-#源链接爬虫于>>https://www.liangjianghu.com/searchads-appstore-switch
-#Created by ddgksf2013，使用方法：输入区号，搜索即可
-# cn  (切换至中国区)
-^https:\/\/duckduckgo.com\/\?q=cn&.+ url 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143465&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=cn&urlDesc=
-# hk  (切换至香港区)
-^https:\/\/duckduckgo.com\/\?q=hk&.+ url 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143463&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=hk&urlDesc=
-# tw  (切换至台湾区)
-^https:\/\/duckduckgo.com\/\?q=tw&.+ url 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143470&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=tw&urlDesc=
-# us  (切换至美国区)
-^https:\/\/duckduckgo.com\/\?q=us&.+ url 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143441&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=us&urlDesc=
-# jp  (切换至日本区)
-^https:\/\/duckduckgo.com\/\?q=jp&.+ url 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143462&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=jp&urlDesc=
-# kr  (切换至韩国区)
-^https:\/\/duckduckgo.com\/\?q=kr&.+ url 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143466&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=kr&urlDesc=
-# tr  (切换至土耳其区)
-^https:\/\/duckduckgo.com\/\?q=tr&.+ url 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143480&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=tr&urlDesc=
-
-
-
-# > 网盘
-
-# gd(Google Drive)
-^https:\/\/duckduckgo.com\/\?q=gd\+([^&]+).+ url 302 https://www.google.com/search?q=%22Google+Drive%22+$1
-
-# tgd(t.me/gdurl 搜索Google Drive)
-^https:\/\/duckduckgo.com\/\?q=tgd\+([^&]+).+ url 302 https://t.me/s/gdurl?q=$1
-
-# zgd(zhao.pp.ua搜索Google Drive)
-^https:\/\/duckduckgo.com\/\?q=zgd(\+|%20)([^&]+).+ url 302 https://zhao.pp.ua/?q=$2
-
-# > 默认搜索
-
-# bi(Bing)
-^https:\/\/duckduckgo.com\/\?q=bi\+([^&]+).+ url 302 https://cn.bing.com/search?q=$1
-
-# bd(BaiDu)
-^https:\/\/duckduckgo.com\/\?q=bd\+([^&]+).+ url 302 https://www.baidu.com/s?wd=$1
-
-# ddg(DckDuckgo)
-^https:\/\/duckduckgo.com\/\?q=ddg\+([^&]+).+ url 302 https://duckduckgo.com/?ia=about&q=$1
-
-# 无指令(谷歌)
-^https:\/\/duckduckgo.com\/\?q=([^&]+).+ url 302 https://www.google.com/search?q=$1
-
-# 阻止google.com 跳转到google.com.hk
-^https?:\/\/(www\.)?g\.cn url 302 https://www.google.com
-^https?:\/\/(www\.)?google\.cn url 302 https://www.google.com
-
-
-
-
-
-# ================ Safari全能搜索 结束 ================
-
 
 # 香蕉视频   解锁部分观看限制    官网: https://www.aa2.app    
 #ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com
